@@ -9,9 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single-spa": "ng build --prod --deploy-url /dist/navbar --output-hashing none",
-    "serve:single-spa": "ng serve --disable-host-check --port 5900 --deploy-url http://localhost:5900/ --live-reload false",
-    "build:single-spa:usermf": "ng build usermf --prod --deploy-url http://localhost:5901/",
-    "serve:single-spa:usermf": "ng s --project usermf --disable-host-check --port 5901 --deploy-url http://localhost:5901/ --live-reload false"
+    "serve:single-spa": "ng serve --disable-host-check --port 5900 --deploy-url http://localhost:5900/ --live-reload false"
+
   },
   "private": true,
   "dependencies": {
@@ -23,6 +22,7 @@
     "@angular/platform-browser": "~9.0.0",
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
+    "bootstrap": "^4.5.0",
     "rxjs": "~6.5.4",
     "single-spa": "^5.5.1",
     "single-spa-angular": "^4.1.0",
